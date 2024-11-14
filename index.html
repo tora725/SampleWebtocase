@@ -1,0 +1,62 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  次の <META> 要素を、HTML の <HEAD>タグ間に追加してください。必要に応じて、charset                  -->
+<!--  パラメーターを変更して、HTML ページの文字コードを指定してください。                                    -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  次の <FORM> 要素をページに追加してください。                                              -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://mori-portal--devcl14.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DIo000000LGKd" method="POST">
+
+<input type=hidden name="orgid" value="00DIo000000LGKd">
+<input type=hidden name="retURL" value="http://www.circlace.com">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  注意: これらの項目は、省略可能なデバッグ用要素です。デバッグモードでテストを行う場合は、これらの行をコメント解除してください。        -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail" value="thanawa@circlace.com">    -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="name">取引先責任者名</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+<label for="email">メール</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">電話</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="subject">件名</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+<label for="description">説明</label><textarea name="description"></textarea><br>
+
+<label for="company">会社名</label><input  id="company" maxlength="80" name="company" size="20" type="text" /><br>
+
+<label for="status">状況</label><select  id="status" name="status"><option value="">--なし--</option><option value="On Hold">On Hold</option>
+<option value="Escalated">Escalated</option>
+<option value="Closed">Closed</option>
+<option value="New">New</option>
+</select><br>
+
+<label for="type">種別</label><select  id="type" name="type"><option value="">--なし--</option><option value="Problem">Problem</option>
+<option value="Feature Request">Feature Request</option>
+<option value="Question">Question</option>
+</select><br>
+
+<label for="priority">優先度</label><select  id="priority" name="priority"><option value="">--なし--</option><option value="High">High</option>
+<option value="Medium">Medium</option>
+<option value="Low">Low</option>
+</select><br>
+
+<label for="reason">原因</label><select  id="reason" name="reason"><option value="">--なし--</option><option value="User didn&#39;t attend training">User didn&#39;t attend training</option>
+<option value="Complex functionality">Complex functionality</option>
+<option value="Existing problem">Existing problem</option>
+<option value="Instructions not clear">Instructions not clear</option>
+<option value="New problem">New problem</option>
+</select><br>
+
+<input type="hidden"  id="external" name="external" value="1" /><br>
+
+<input type="submit" name="submit">
+
+</form>
